@@ -14,7 +14,7 @@ function App() {
     let uname=event.target.username.name.value;
     let password=event.target.password.value;
     let obj ={email,uname,password}
-    axios.post(`http://localhost:8101/post`)
+    axios.post(`http://localhost:8101/post`,obj)
     .then((res)=>{
       console.log(res.data);
     })
